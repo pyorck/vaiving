@@ -78,8 +78,8 @@
             padding: 10px;
             border: none;
             border-radius: 4px;
-            background-color: #007bff;
-            color: #ffffff;
+            background-color: #ffee24;
+            color: #000000;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -88,7 +88,7 @@
         }
         
         button:hover {
-            background-color: #0056b3;
+            background-color: #fff583;
         }
         
         #form-response {
@@ -104,12 +104,11 @@
     <img src="Vaiving.png" alt="Company Logo" class="logo">
     <div class="separator"></div>
     <h1>Are you ready for take off? </h1>
-    <p style="font-weight: bold;">You vibe, we vibe, together, we are Vaiving.</p>
-    <p style="font-weight: bold;">Grab your -25% discount on launch.</p>
+    <p style="font-weight: bold;">You vibe, we vibe. Together, we are Vaiving. Grab your -25% discount on launch:</p>
     <div class="form-container">
         <form id="subscribe-form">
             <input type="email" name="email" placeholder=" E-mail address" required>
-            <button type="submit">I AM VAIVING!</button>
+            <button type="submit">YES, I AM VAIVING!</button>
             <div id="form-response" style="margin-top: 10px;"></div>
         </form>
     </div>
@@ -130,7 +129,7 @@
                     data: formData,
                     dataType: 'json',
                     success: function(response) {
-                        $('#form-response').html('<p>Thank you for subscribing!</p>');
+                        $('#form-response').html('<p>Thanks for Vaiving! You will get news soon from us :)</p>');
                         $('#subscribe-form')[0].reset(); // Clear the form fields
                     },
                     error: function(xhr, status, error) {
