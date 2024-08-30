@@ -35,7 +35,7 @@ body {
 
         p {
             color: #000000;
-            font-size: 30px; /* Adjust the size as needed */
+            font-size: 25px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the p */
             margin-bottom: 15px; /* Spacing below the p */
         }
@@ -96,6 +96,26 @@ body {
             font-size: 14px;
             text-align: center; /* Center-aligns response message */
         }
+
+            .footer {
+                background-color: #333; /* Dark background color */
+                color: white; /* White text color */
+                padding: 20px;
+                text-align: center; /* Center-align text */
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+            }
+            
+            .footer a {
+                color: #f0f8ff; /* Light color for links */
+                text-decoration: none; /* Remove underline from links */
+            }
+            
+            .footer a:hover {
+                text-decoration: underline; /* Underline links on hover */
+            }
 
         /* Media Query for Smaller Screens */
         @media (max-width: 600px) {
