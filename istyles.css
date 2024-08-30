@@ -35,7 +35,7 @@ body {
 
         p {
             color: #000000;
-            font-size: 24px; /* Adjust the size as needed */
+            font-size: 27px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the p */
             margin-bottom: 15px; /* Spacing below the p */
         }
@@ -109,5 +109,5 @@ body {
         }
     
         p {
-            font-size: 0.875rem; /* Reduce paragraph size on smaller screens */
+            font-size: 0.7rem; /* Reduce paragraph size on smaller screens */
         }
