@@ -111,3 +111,15 @@ body {
         p {
             font-size: 0.7rem; /* Reduce paragraph size on smaller screens */
         }
+
+        input[type="email"] {
+            width: 75%
+            max-width: 200px
+
+        }
+
+        button {
+            width: 75%
+            max-width: 200px
+            
+        }
