@@ -118,7 +118,7 @@
     <img src="Vaiving.png" alt="Company Logo" class="logo">
     <div class="separator"></div>
     <h1>Are you ready for take off? </h1>
-    <p style="font-weight: bold;">Grab your -25% DISCOUNT on launch:</p>
+    <p style="font-weight: bold;">Grab your <span style="color: #FFD100;">-25% DISCOUNT</span> on launch:</p>
     <div class="form-container">
         <form id="subscribe-form">
             <input type="email" name="email" placeholder="E-mail address" required>
@@ -144,7 +144,7 @@
                     data: formData,
                     dataType: 'json',
                     success: function(response) {
-                        $('#form-response').html('<p>Thanks for Vaiving! You will get news soon from us :)</p>');
+                        $('#form-response').html('<p>Thanks for Vaiving. You will get news from us very soon! :)</p>');
                         $('#subscribe-form')[0].reset(); // Clear the form fields
                     },
                     error: function(xhr, status, error) {
