@@ -103,12 +103,13 @@
         <!-- Add the logo image -->
     <img src="Vaiving.png" alt="Company Logo" class="logo">
     <div class="separator"></div>
-    <h1>AVAILABLE Q1 2025</h1>
-    <p style="font-weight: bold;">Are you Vaiving? Grab your -25% discount on launch!</p>
+    <h1>Are you ready for take off? </h1>
+    <p style="font-weight: bold;">You vibe, we vibe, together, we are Vaiving.</p>
+    <p style='font-weight: bold;">Grab your -25% discount on launch!</p>
     <div class="form-container">
         <form id="subscribe-form">
-            <input type="email" name="email" placeholder=" E-mail" required>
-            <button type="submit">I'm Vaiving!</button>
+            <input type="email" name="email" placeholder=" E-mail address" required>
+            <button type="submit">I AM VAIVING!</button>
             <div id="form-response" style="margin-top: 10px;"></div>
         </form>
     </div>
@@ -133,7 +134,7 @@
                         $('#subscribe-form')[0].reset(); // Clear the form fields
                     },
                     error: function(xhr, status, error) {
-                        $('#form-response').html('<p>Oops! Something went wrong. Please try again.</p>');
+                        $('#form-response').html('<p>Make sure the e-mail is valid.</p>');
                     }
                 });
             });
