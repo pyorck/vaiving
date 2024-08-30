@@ -21,6 +21,15 @@
             height: auto;      /* Keeps the aspect ratio */
         }
 
+        /* Styling for the separator line */
+        .separator {
+            width: 80%; /* Adjust the width of the line */
+            max-width: 600px; /* Optional: limits the max-width */
+            height: 2px; /* Thickness of the line */
+            background-color: black; /* Color of the line */
+            margin: 20px auto; /* Centers the line horizontally */
+        }
+
         /* Styling for the rest of the page content */
         
         h1 {
@@ -29,16 +38,17 @@
         }
 
         p {
-            color: #666;
-            font-size: 24px; /* Adjust the size as needed */
+            color: #333;
+            font-size: 30px; /* Adjust the size as needed */
         }
     </style>
 </head>
 <body>
         <!-- Add the logo image -->
     <img src="Vaiving.png" alt="Company Logo" class="logo">
-    <h1>OFFICIAL LAUNCH @ Q1 2025</h1>
-    <p>Subscribe now! The first 1000 Vaivers will get a 25% discount</p>
+    <div class="separator"></div>
+    <h1>SEE YOU IN Q1 2025</h1>
+    <p>Are you Vaiving? The before-launch Vaivers will get a 25% discount and more!</p>
     <div class="form-container">
         <form id="subscribe-form">
             <input type="email" name="email" placeholder="E-mail" required>
