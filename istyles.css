@@ -1,1 +1,113 @@
+body {
+            font-family: Geneva, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Styling for the logo */
+        .logo {
+            display: block;
+            margin: 20px auto; /* Centers the logo horizontally with some margin */
+            max-width: 500px;  /* Adjust this value to change the logo size */
+            height: auto;      /* Keeps the aspect ratio */
+        }
+
+        /* Styling for the separator line */
+        .separator {
+            width: 80%; /* Adjust the width of the line */
+            max-width: 800px; /* Optional: limits the max-width */
+            height: 4px; /* Thickness of the line */
+            background-color: black; /* Color of the line */
+            margin: 20px auto; /* Centers the line horizontally */
+            margin-bottom: 5px; /* Spacing below the Separator */
+            margin-top: 5px; /* Spacing below the Separator */
+        }
+
+        /* Styling for the rest of the page content */
+        
+        h1 {
+            color: #000000;
+            font-size: 55px; /* Adjust the size as needed */
+            margin-top: 5px; /* Spacing over the h1 */
+            margin-bottom: 5px; /* Spacing below the h1 */
+        }
+
+        p {
+            color: #000000;
+            font-size: 20px; /* Adjust the size as needed */
+            margin-top: 5px; /* Spacing over the p */
+            margin-bottom: 15px; /* Spacing below the p */
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            width: 100%;
+            margin: 0 auto; /* Center container horizontally */
+        }
+        
+        #subscribe-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center; /* Center-aligns form elements horizontally */
+        }
+        
+        input[type="email"] {
+            text-align: center; /* Center-align the text inside the input field */
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            max-width: 380px; /* Optional: limit max width for better alignment */
+            box-sizing: border-box;
+            transition: background-color 0.8s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Hover effect for the email input field */
+        input[type="email"]:hover {
+            border-color: #000000; /* Change the border color on hover */
+            background-color: #fff583; /* Change the background color on hover */
+        }
+        
+        button {
+            padding: 10px;
+            border: 3px solid #000000;
+            border-radius: 4px;
+            background-color: #ffe800;
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.8s ease;
+            width: 100%; /* Make the button the same width as the input */
+            max-width: 250px; /* Optional: limit max width for consistency */
+        }
+        
+        button:hover {
+            background-color: #fff583;
+        }
+        
+        #form-response {
+            margin-top: 10px;
+            color: #28a745; /* Green color for success message */
+            font-size: 14px;
+            text-align: center; /* Center-aligns response message */
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 600px) {
+        .logo {
+            width: 75%; /* Increase logo size on smaller screens */
+            max-width: 250px; /* Adjust maximum width for smaller screens */
+        }
+
+        h1 {
+            font-size: 1.5rem; /* Reduce heading size on smaller screens */
+        }
+    
+        p {
+            font-size: 0.875rem; /* Reduce paragraph size on smaller screens */
+        }
