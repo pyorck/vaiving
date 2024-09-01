@@ -115,7 +115,7 @@ body {
         .button-link2 {
             display: inline-block;   /* Makes the link behave like a button */
             padding: 10px 20px;      /* Adds space inside the button */
-            background-color: #d92877; /* Button background color (LinkedIn Blue) */
+            background-color: #000000; /* Button background color (LinkedIn Blue) */
             color: white;            /* Button text color */
             text-align: center;      /* Centers text inside the button */
             text-decoration: none;   /* Removes underline from the link */
