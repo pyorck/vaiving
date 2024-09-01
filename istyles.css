@@ -97,6 +97,21 @@ body {
             text-align: center; /* Center-aligns response message */
         }
 
+        .button-link {
+            display: inline-block;   /* Makes the link behave like a button */
+            padding: 10px 20px;      /* Adds space inside the button */
+            background-color: #0073b1; /* Button background color (LinkedIn Blue) */
+            color: white;            /* Button text color */
+            text-align: center;      /* Centers text inside the button */
+            text-decoration: none;   /* Removes underline from the link */
+            border-radius: 5px;      /* Rounds the corners of the button */
+            font-size: 16px;         /* Font size */
+        }
+
+        .button-link:hover {
+            background-color: #005582; /* Changes color on hover */
+        }
+
         /* Media Query for Smaller Screens */
         @media (max-width: 600px) {
         .logo {
