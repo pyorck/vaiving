@@ -100,7 +100,7 @@ body {
         button-link {
             display: inline-block;   /* Makes the link behave like a button */
             padding: 10px 20px;      /* Adds space inside the button */
-            background-color: #bce8ff; /* Button background color (LinkedIn Blue) */
+            background-color: #005582; /* Button background color (LinkedIn Blue) */
             color: white;            /* Button text color */
             text-align: center;      /* Centers text inside the button */
             text-decoration: none;   /* Removes underline from the link */
@@ -109,7 +109,7 @@ body {
         }
 
         button-link:hover {
-            background-color: #9cddff; /* Changes color on hover */
+            background-color: #0073b1; /* Changes color on hover */
         }
 
         /* Media Query for Smaller Screens */
