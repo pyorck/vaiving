@@ -97,7 +97,7 @@ body {
             text-align: center; /* Center-aligns response message */
         }
 
-        button-link {
+        .button-link {
             display: inline-block;   /* Makes the link behave like a button */
             padding: 10px 20px;      /* Adds space inside the button */
             background-color: #005582; /* Button background color (LinkedIn Blue) */
@@ -108,7 +108,7 @@ body {
             font-size: 16px;         /* Font size */
         }
 
-        button-link:hover {
+        .button-link:hover {
             background-color: #0073b1; /* Changes color on hover */
         }
 
