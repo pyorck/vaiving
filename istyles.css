@@ -171,6 +171,7 @@ body {
             height: 10px;
             display: flex; /* Flexbox layout */
             align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
             overflow: hidden; /* Hide any overflow */
             position: relative; /* Position relative for absolute positioning inside */
 
