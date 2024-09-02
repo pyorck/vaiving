@@ -64,7 +64,7 @@ body {
             font-size: 16px;
             font-weight: bold;
             width: 100%;
-            max-width: 380px; /* Optional: limit max width for better alignment */
+            max-width: 340px; /* Optional: limit max width for better alignment */
             box-sizing: border-box;
             transition: background-color 0.8s ease; /* Smooth transition for hover effects */
         }
