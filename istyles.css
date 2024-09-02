@@ -136,6 +136,7 @@ body {
             color: black;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
                         
             }
             
