@@ -171,7 +171,7 @@ body {
                 color: white; /* Text color */
                 white-space: nowrap; /* Prevent text from wrapping */
                 position: absolute; /* Absolute positioning for the scrolling effect */
-                animation: scroll-left 10s linear infinite; /* Animation for scrolling */
+                animation: scroll-left 20s linear infinite; /* Animation for scrolling */
             }
             
             /* Keyframes for the scrolling effect */
