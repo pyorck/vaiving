@@ -167,6 +167,23 @@ body {
 
             }
 
+            .scrolling-text {
+                color: white; /* Text color */
+                white-space: nowrap; /* Prevent text from wrapping */
+                position: absolute; /* Absolute positioning for the scrolling effect */
+                animation: scroll-left 10s linear infinite; /* Animation for scrolling */
+            }
+            
+            /* Keyframes for the scrolling effect */
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(100%); /* Start off the right side */
+                }
+                100% {
+                    transform: translateX(-100%); /* Move to the left side */
+                }
+            }
+
         /* Media Query for Mobile Website */
 
 @media (max-width: 600px) {
