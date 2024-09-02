@@ -11,6 +11,7 @@ body {
             margin: 20px auto; /* Centers the logo horizontally with some margin */
             max-width: 500px;  /* Adjust this value to change the logo size */
             height: auto;      /* Keeps the aspect ratio */
+            margin-bottom: 5px; /* Spacing below the Separator */
         }
 
         /* Styling for the separator line */
