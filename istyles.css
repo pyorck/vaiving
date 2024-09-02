@@ -127,6 +127,24 @@ main {
             background-color: #ffc964; /* Changes color on hover */
         }
 
+            .site-header {
+                        
+            background-color: #FFFFFF; /* Header background color */
+            color: black;              /* Header text color */
+            padding: 20px;             /* Padding around header content */
+            text-align: center;        /* Center the text inside the header */
+                        
+            }
+            
+            .site-footer {
+                        
+            background-color: #000000; /* Header background color (LinkedIn Blue) */
+            color: white;              /* Header text color */
+            padding: 20px;             /* Padding around header content */
+            text-align: center;        /* Center the text inside the header */
+                        
+            }
+
         /* Media Query for Smaller Screens */
         @media (max-width: 600px) {
         .logo {
