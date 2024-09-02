@@ -136,7 +136,9 @@ body {
             color: black;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
+            position: relative;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            z-index: 1;
                         
             }
             
@@ -155,6 +157,7 @@ body {
             color: black;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
+            margin-top: -4px
                         
             }
 
@@ -164,7 +167,7 @@ body {
             color: white;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
-            height: 10px
+            height: 10px;
 
             }
 
