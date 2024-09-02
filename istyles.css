@@ -169,14 +169,19 @@ body {
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
             height: 10px;
+            display: flex; /* Flexbox layout */
+            align-items: center; /* Center content vertically */
+            overflow: hidden; /* Hide any overflow */
+            position: relative; /* Position relative for absolute positioning inside */
 
             }
 
             .scrolling-text {
-                color: white; /* Text color */
-                white-space: nowrap; /* Prevent text from wrapping */
-                position: absolute; /* Absolute positioning for the scrolling effect */
-                animation: scroll-left 20s linear infinite; /* Animation for scrolling */
+            color: white; /* Text color */
+            white-space: nowrap; /* Prevent text from wrapping */
+            position: absolute; /* Absolute positioning for the scrolling effect */
+            animation: scroll-left 20s linear infinite; /* Animation for scrolling */
+                        
             }
             
             /* Keyframes for the scrolling effect */
