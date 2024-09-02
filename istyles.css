@@ -9,7 +9,7 @@ body {
         .logo {
             display: block;
             margin: 20px auto; /* Centers the logo horizontally with some margin */
-            max-width: 500px;  /* Adjust this value to change the logo size */
+            max-width: 600px;  /* Adjust this value to change the logo size */
             height: auto;      /* Keeps the aspect ratio */
             margin-bottom: 3px; /* Spacing below */
             margin-top: 3px; /* Spacing top */
@@ -189,7 +189,7 @@ body {
 @media (max-width: 600px) {
 
     .logo {
-        width: 80%; /* Resize logo on smaller screens */
+        width: 85%; /* Resize logo on smaller screens */
         max-width: 250px; /* Adjust maximum width for smaller screens */
     }
 
@@ -202,7 +202,7 @@ body {
     }
 
     p {
-        font-size: 1.0rem; /* Reduce paragraph size on smaller screens */
+        font-size: 0.8rem; /* Reduce paragraph size on smaller screens */
     }
 
     input[type="email"] {
