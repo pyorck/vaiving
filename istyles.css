@@ -156,16 +156,21 @@ body {
                         
             }
 
-            .top-section
+            .top-section {
+
             background-color: #000000; /* Header background color (LinkedIn Blue) */
             color: white;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
+            height: 15px
 
-        /* Media Query for Smaller Screens */
+            }
+
+        /* Media Query for Mobile Website */
+
         @media (max-width: 600px) {
         .logo {
-            width: 75%; /* Increase logo size on smaller screens */
+            width: 75%; /* Resize logo on smaller screens */
             max-width: 250px; /* Adjust maximum width for smaller screens */
         }
 
