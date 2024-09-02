@@ -168,28 +168,29 @@ body {
 
         /* Media Query for Mobile Website */
 
-        @media (max-width: 600px) {
-        .logo {
-            width: 75%; /* Resize logo on smaller screens */
-            max-width: 250px; /* Adjust maximum width for smaller screens */
-        }
+@media (max-width: 600px) {
 
-        h1 {
-            font-size: 1.5rem; /* Reduce heading size on smaller screens */
-        }
-    
-        p {
-            font-size: 0.7rem; /* Reduce paragraph size on smaller screens */
-        }
+    .logo {
+        width: 75%; /* Resize logo on smaller screens */
+        max-width: 250px; /* Adjust maximum width for smaller screens */
+    }
 
-        input[type="email"] {
-            width: 75%
-            max-width: 200px
+    h1 {
+        font-size: 1.5rem; /* Reduce heading size on smaller screens */
+    }
 
-        }
+    p {
+        font-size: 0.7rem; /* Reduce paragraph size on smaller screens */
+    }
 
-        button {
-            width: 75%
-            max-width: 200px
+    input[type="email"] {
+        width: 75%; /* Resize input field on smaller screens */
+        max-width: 200px; /* Adjust maximum width for smaller screens */
+    }
+
+    button {
+        width: 75%; /* Resize button on smaller screens */
+        max-width: 200px; /* Adjust maximum width for smaller screens */
+    }
             
-        }
+            }
