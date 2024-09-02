@@ -3,7 +3,6 @@ body {
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #F5F5F5;
         }
 
         /* Styling for the logo */
@@ -140,6 +139,15 @@ body {
             .site-footer {
                         
             background-color: #000000; /* Header background color (LinkedIn Blue) */
+            color: white;              /* Header text color */
+            padding: 20px;             /* Padding around header content */
+            text-align: center;        /* Center the text inside the header */
+                        
+            }
+
+            .site-main {
+                        
+            background-color: #DFDFDF; /* Header background color (LinkedIn Blue) */
             color: white;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
