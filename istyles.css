@@ -194,7 +194,7 @@ body {
     }
 
    .scrolling-text {
-        font-size: 1.0rem
+        font-size: 0.6rem
     }
 
     h1 {
@@ -214,5 +214,7 @@ body {
         width: 75%; /* Resize button on smaller screens */
         max-width: 200px; /* Adjust maximum width for smaller screens */
     }
+
+
             
             }
