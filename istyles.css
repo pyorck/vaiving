@@ -137,8 +137,10 @@ body {
             padding: 20px; /* Space around content */
             text-align: center; /* Center the header content */
             position: relative; /* Required for box-shadow to appear */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Shadow effect */
             z-index: 1; /* Ensures header appears above main */
+            margin-top: -8px;
+            margin-bottom: -8px;
                         
             }
             
@@ -157,7 +159,6 @@ body {
             color: black;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
-            margin-top: -4px
                         
             }
 
