@@ -3,6 +3,7 @@ body {
             text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #F5F5F5;
         }
 
         /* Styling for the logo */
@@ -129,7 +130,7 @@ body {
 
             .site-header {
                         
-            background-color: #F5F5F5; /* Header background color */
+            background-color: #FFFFFF; /* Header background color */
             color: black;              /* Header text color */
             padding: 20px;             /* Padding around header content */
             text-align: center;        /* Center the text inside the header */
