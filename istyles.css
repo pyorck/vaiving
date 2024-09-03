@@ -9,7 +9,7 @@ body {
         .logo {
             display: block;
             margin: 0px auto; /* Centers the logo horizontally with some margin */
-            max-width: 600px;  /* Adjust this value to change the logo size */
+            max-width: 800px;  /* Adjust this value to change the logo size */
             height: auto;      /* Keeps the aspect ratio */
             margin-bottom: 3px; /* Spacing below */
             margin-top: 3px; /* Spacing top */
