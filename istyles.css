@@ -31,14 +31,14 @@ body {
         
         h1 {
             color: #000000;
-            font-size: 42px; /* Adjust the size as needed */
+            font-size: 45px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the h1 */
             margin-bottom: 10px; /* Spacing below the h1 */
         }
 
         p {
             color: #000000;
-            font-size: 24px; /* Adjust the size as needed */
+            font-size: 26px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the p */
             margin-bottom: 25px; /* Spacing below the p */
         }
