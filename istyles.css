@@ -8,7 +8,7 @@ body {
         /* Styling for the logo */
         .logo {
             display: block;
-            margin: 20px auto; /* Centers the logo horizontally with some margin */
+            margin: 0px auto; /* Centers the logo horizontally with some margin */
             max-width: 600px;  /* Adjust this value to change the logo size */
             height: auto;      /* Keeps the aspect ratio */
             margin-bottom: 3px; /* Spacing below */
@@ -31,14 +31,14 @@ body {
         
         h1 {
             color: #000000;
-            font-size: 48px; /* Adjust the size as needed */
+            font-size: 54px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the h1 */
             margin-bottom: 10px; /* Spacing below the h1 */
         }
 
         p {
             color: #000000;
-            font-size: 28px; /* Adjust the size as needed */
+            font-size: 32px; /* Adjust the size as needed */
             margin-top: 5px; /* Spacing over the p */
             margin-bottom: 25px; /* Spacing below the p */
         }
