@@ -139,7 +139,7 @@ p {
 }
 
 button {
-    padding: 1vh;
+    padding: 0.5vh;
     border: 3px solid #000000;
     border-radius: 2rem;
     background-color: #ffe800;
@@ -148,7 +148,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.5s ease;
-    width: 100%; /* Make the button the same width as the input */
+    width: 40vh; /* Make the button the same width as the input */
     max-width: 40vh; /* Optional: limit max width for consistency */
     text-wrap: nowrap;
 }
@@ -171,6 +171,7 @@ button:hover {
 #subscribe-form {
     display: flex;
     flex-direction: column;
+    margin-bottom: -4rem;
     align-items: center; /* Center-aligns form elements horizontally */
 }
 
