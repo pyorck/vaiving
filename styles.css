@@ -226,13 +226,28 @@ input[type="email"]:hover {
     }
 
     .section-left, .section-right {
-        padding: 2vw;
+        padding: 0.2vw;
     }
 
     button, .button-link, .button-link2 {
         font-size: 3.0vw;
         max-width: 25vw;
         padding: 0.5vh;
+        margin-top: 0.5rem;
+    }
+
+    input[type="email"] {
+        text-align: center; /* Center-align the text inside the input field */
+        padding: 0.9vh;
+        border: 3px solid #000000;
+        border-radius: 0px;
+        font-size: 2vw;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 5px;
+        max-width: 31vw; /* Optional: limit max width for better alignment */
+        box-sizing: border-box;
+        transition: transform 0.5s ease;
     }
 
 }
