@@ -58,3 +58,9 @@ input[type="email"][required] + label[placeholder]:before {
     transition: 0.3s ease-in-out;
     font-family: "Inter Tight", serif;
 }
+
+input[type="email"],
+input[type="text"],
+textarea {
+    touch-action: manipulation; /* Prevents zooming */
+}
