@@ -1,3 +1,11 @@
+/*IOS PREVENT ZOOM*/
+
+input[type="email"],
+select:focus,
+textarea {
+  font-size: 13px;
+}
+
 /* Input field styling */
 input[type="email"] {
     box-sizing: border-box;
@@ -13,7 +21,6 @@ input[type="email"] {
     outline: none;
     font-family: "Inter Tight", serif;
     transition: all 0.4s;
-    font-size: 13px;
 }
 
 /* Input focus styling */

@@ -203,10 +203,6 @@
                         
                         // Replace the email input field with the response message
                         $('#subscribe-form input[name="email"]').replaceWith($('#form-response'));
-                    },
-                    error: function(xhr, status, error) {
-                        $('#form-response').html('<p>Make sure the e-mail is valid.</p>')
-                                              .css('visibility', 'visible'); // Show error message
                     }
                 });
             });
