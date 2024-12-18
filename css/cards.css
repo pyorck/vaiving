@@ -4,7 +4,8 @@
     align-items: center;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.4);
-    margin-top: calc(10vh + 2.5vh); /* Adjust based on page layout */
+    margin-top: calc(1.5vh + 2.5vh); /* Adjust based on page layout */
+    margin-bottom: 4rem;
 }
 
 .virtualcards-header {
@@ -34,11 +35,24 @@
     justify-content: flex-start; /* Align cards to the left */
     align-items: center; /* Center cards vertically */
     padding-bottom: 2vh;
+    box-shadow: white;
+
+    /* Optional: Show a scrollbar for desktop */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.7) transparent; /* Color for Firefox */
 }
 
-
 .virtualcards::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.virtualcards::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.virtualcards::-webkit-scrollbar-track {
+    background: transparent; /* Track background */
 }
 
 .card-container {
@@ -51,8 +65,23 @@
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    height: 8rem;
+    height: 8rem; /* Fixed height */
+    transition: all 0.6s;
+    cursor: pointer;
 }
+
+.card-container:hover {
+    background-color: white;
+}
+
+.card-container:hover .card-container__header {
+    transform: translateY(2.5px);
+}
+
+.card-container:hover .card-container__content {
+    transform: translateY(-2.5px);
+}
+
 
 .card-container__header {
     height: 65px; /* Fixed height for the header to display the image */
@@ -61,6 +90,7 @@
     flex-shrink: 0; /* Prevent shrinking */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition: all 0.6s;
 }
 
 .card-container__content {
@@ -70,6 +100,7 @@
     flex-direction: column;
     justify-content: space-between; /* Ensure space between elements */
     font-family: "Inter Tight", serif;
+    transition: all 0.6s;
 }
 
 .title {
@@ -78,6 +109,7 @@
     align-items: center;
     text-align: center;
     font-weight: 500;
+    margin-top: -0.2rem;
 }
 
 .common-button {
@@ -91,4 +123,5 @@
     cursor: pointer;
     font-family: "Inter Tight", serif;
     margin: 0; /* Remove auto margins to allow proper centering */
+    scale: 1.0;
 }

@@ -1,3 +1,223 @@
+/* STYLING PRE-LAUNCH SITE */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    width: 100%; 
+}
+
+#subscribe-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+#subscribe-form:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: -5000px;
+    height: 100%;
+    width: 15000px;
+    z-index: -1;
+    background: inherit;
+}
+
+#subscribe-form span {
+    position: relative;
+    display: inline-block;
+    margin: 30px 10px;
+}
+
+/* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    margin: 0 auto;
+    margin-top: -1rem;
+
+}
+.button-container button {
+    background: linear-gradient(45deg, transparent 5%, #ffe800 80%);
+    font-size: 20px;
+    font-family: "Inter Tight", serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    max-width: 10rem;
+    animation: breatheAnimation 3s infinite;
+  }
+
+.button-container button:after {
+  width: 8rem;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: "Inter Tight", serif;
+  background: linear-gradient(45deg, transparent 5%, #ffe800 5%);
+  border: 0;
+  color: #000000;
+  letter-spacing: 5px;
+  box-shadow: 6px 0px 0px #feffaa;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-container button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'VAIVING';
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #000000 3%, #f7a5ff 5%, #feffc8 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #c2ff73;
+  clip-path: var(--slice-0);
+}
+
+.button-container button:hover:after {
+  animation: 1.5s glitch ease-in-out;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@keyframes breatheAnimation {
+0% {
+    transform: scale(1) translateY(0); /* Original size */
+}
+85% {
+    transform: scale(1) translateY(0); /* First large expansion */
+}
+90% {
+    transform: scale(1.2) translateY(0); /* First quick shrink */
+}
+94% {
+    transform: scale(1) translateY(0); /* Second quick expansion */
+}
+98% {
+    transform: scale(1.2) translateY(0); /* Second quick expansion */
+}
+100% {
+    transform: scale(1) translateY(0); /* Back to original size */
+}
+}
+
+/* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON *//* BUTTON */
+
+#form-response {
+display: flex;
+align-items: center; /* Center content vertically */
+justify-content: center; /* Center content horizontally */
+font-size: calc(0.6rem + 0.5vw); /* Dynamically adjust font size */
+font-weight: bold;
+text-align: center;
+position: absolute;
+visibility: hidden; /* Hide by default */
+bottom: calc(0.2vh + 1vh); /* Adjust based on page layout */
+background-color: rgba(255, 255, 255, 0.8); /* Ensure proper background color */
+border-radius: 5px;
+padding: 0.3rem;
+height: 20px; /* Allow height to adjust based on content */
+max-height: 50px; /* Optional: limit max height to keep it trimmed */
+overflow: hidden; /* Prevent overflow if text is too large */
+scale: 0.95; /* Keep your existing scale */
+}
+
+
+/* Show #form-response after submission */
+.show-response #form-response {
+    visibility: visible;
+}
+
+
+.subscribe {
+    background-color: rgb(255, 255, 255, 0.90);
+    font-weight: 700;
+    padding: 0.2rem;
+    font-size: calc(0.9rem + 1.1vw);
+    margin-top: 0.3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe2 {
+    background-color: rgba(255, 255, 255, 0.90);
+    font-weight: 700;
+    padding: 0.2rem;
+    font-size: calc(0.9rem + 1.1vw);
+    margin-top: 0.4rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -2.5rem;
+}
+
+
 /* BODY */
 
 body {
@@ -7,11 +227,21 @@ body {
     background-color: #ffffff;
     max-height: none;
     overflow-x: hidden;
+    height: 100%;
 }
 
 html {
     overflow-x: hidden;
+    height: 100%;
 }
+
+a {
+    color: blue; /* Default color for links */
+}
+
+a:visited {
+    color: blue; /* Keeps visited links the same color */
+}   
 
 /* VAIVING TITLE + LOGO */
 
@@ -35,18 +265,19 @@ html {
 .section-left p {
     margin: 0;
     display: inline-flex;
-    font-size: clamp(1.9rem, 5vw, 3rem); /* Smaller font size for mobile, larger for desktop */
+    font-size: clamp(1.9rem, 5vw, 2.8rem); /* Smaller font size for mobile, larger for desktop */
     font-family: "Just Another Hand", serif;
     font-weight: 400;
     line-height: 1;              /* Ensure consistent vertical alignment */
     vertical-align: middle;      /* Align text in the middle with logo */
     margin-left: 1rem;
-    margin-right: -0.5rem;
+    margin-right: -0.2rem;
 }
 
 .logo {
     display: inline-flex;        /* Keep the logo inline with the text */
     align-items: center;         /* Center the logo vertically */
+    
 }
 
 .logo img {
@@ -56,21 +287,21 @@ html {
 
 
 
-/* For the MAIN section */
+/* For the MAIN section */ 
 
 .section-right {
+    width: 100%;
+    height: auto; /* Height adapts to content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #000000;
     background-image: url('pics/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    min-height: clamp(90vh, 100vh, 120vh); /* Responsive min-height */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
+    min-height: auto;
 }
 
 .marketinghead {
@@ -81,126 +312,42 @@ html {
 
 .marketinghead p {
     margin: 0 auto;
-    width: min(90vw, 40rem); /* Responsive width up to a max */
-    font-size: calc(0.8rem + 1.2vw); /* Dynamically adjust font size */
+    width: min(80vw, 50rem); /* Responsive width up to a max */
+    font-size: calc(1.15rem + 1.3vw); /* Dynamically adjust font size */
     line-height: 1.3; /* Adjust vertical spacing for readability */
-    max-width: 80rem; /* Ensures text wraps within a specific width */
+    max-width: 45rem; /* Ensures text wraps within a specific width */
     text-align: center;
     font-weight: 400;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5); /* Subtle shadow effect */
     font-family: "Inter Tight", serif;
-    margin-bottom: 4rem;
-    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    animation: bounce 12s infinite linear; /* Slow, infinite breathing effect */
 }
 
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center the form elements */
-            width: 100%; 
-        }
-
-        #subscribe-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center the form elements */
-            width: 100%; 
-        }
-
-        input[type="email"] {
-            text-align: center;
-            padding: clamp(0.4rem, 1vw, 0.7rem);
-            border-radius: 15px;
-            font-size: clamp(1.0rem, 1vw + 0.5rem, 1.2rem);
-            width: 100%;
-            max-width: clamp(220px, 40vw, 350px);
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            align-items: center;
-            position: relative;
-            z-index: 9999;
-            margin: 0 auto;
-        }
-        .button-container button {
-            color: #000000 !important;
-            background-color: #ffe800 !important;
-            border: 2px solid black !important;
-            font-weight: bold !important;
-            cursor: pointer;
-            border-radius: 15px !important;
-            max-width: clamp(150px, 20vw, 200px) !important; /* Responsive width */
-            padding: clamp(0.3rem, 1vw, 0.6rem) !important; /* Responsive padding */
-            font-size: clamp(0.9rem, 1vw + 0.4rem, 1.1rem) !important; /* Responsive font-size */
-            animation: breatheAnimation 2s ease-in-out infinite;
-        }
-    
-    @keyframes breatheAnimation {
-        0% {
-            transform: scale(1) translateY(0); /* Original size */
-        }
-        85% {
-            transform: scale(1) translateY(0); /* First large expansion */
-        }
-        90% {
-            transform: scale(1.2) translateY(0); /* First quick shrink */
-        }
-        94% {
-            transform: scale(1) translateY(0); /* Second quick expansion */
-        }
-        98% {
-            transform: scale(1.2) translateY(0); /* Second quick expansion */
-        }
-        100% {
-            transform: scale(1) translateY(0); /* Back to original size */
-        }
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: scale(1.0);
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5); /* Subtle shadow effect */;
+        rotate: 0deg;
     }
 
-    #form-response {
-        display: flex;
-        align-items: center; /* Center content vertically */
-        justify-content: center; /* Center content horizontally */
-        font-size: calc(0.6rem + 0.5vw); /* Dynamically adjust font size */
-        font-weight: bold;
-        text-align: center;
-        position: absolute;
-        visibility: hidden; /* Hide by default */
-        bottom: -3vh;
-        background-color: rgba(255, 255, 255, 0.5); /* Ensure proper background color */
-        border-radius: 15px;
-        padding: 0.5rem 1rem; /* Set consistent padding around the text */
-        height: 25px; /* Allow height to adjust based on content */
-        max-height: 50px; /* Optional: limit max height to keep it trimmed */
-        overflow: hidden; /* Prevent overflow if text is too large */
-        scale: 0.95; /* Keep your existing scale */
+    90% {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); /* Subtle shadow effect */
+        color: rgb(31, 31, 31);
     }
     
-        
-        /* Show #form-response after submission */
-        .show-response #form-response {
-            visibility: visible;
-        }
-        
+    40% {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); /* Subtle shadow effect */
+        color: rgb(31, 31, 31);
+    }
+}   
 
-        .subscribe {
-            background-color: rgb(255, 255, 255);
-            font-weight: 700;
-            padding: 0.2rem;
-            font-size: calc(0.9rem + 1.1vw);
-            margin-top: 1rem;
-        }
-
-        .subscribe2 {
-            background-color: rgb(255, 255, 255);
-            font-weight: 700;
-            padding: 0.2rem;
-            font-size: calc(0.9rem + 1.1vw);
-        }
 
 /* FOOTER LINKS + VAIVING LTD. */
 
