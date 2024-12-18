@@ -1,60 +1,59 @@
+/* Input field styling */
 input[type="email"] {
     box-sizing: border-box;
     width: 100%;
+    max-width: 400px; /* Limit maximum width for better responsiveness */
     height: calc(3em + 2px);
-    margin: 0 0 1em;
+    margin: 0;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1.5em;
     background: #fff;
     resize: none;
     outline: none;
-    margin-top: calc(0.5rem + 0.4vw);
     font-family: "Inter Tight", serif;
     transition: all 0.4s;
 }
 
+/* Input focus styling */
 input[type="email"][required]:focus {
     border-color: #000000;
     border: 2px solid #000000;
-    font-family: "Inter Tight", serif;
     transition: all 0.4s;
 }
 
+/* Label for placeholder styling */
 input[type="email"][required]:focus + label[placeholder]:before,
 input[type="email"][required]:valid + label[placeholder]:before {
     color: #000000;
-    transition-duration: 0.2s;
     transform: translate(0, -1.6em) scale(1.0);
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-weight: bold;
     border: 2px solid #000000;
-    font-family: "Inter Tight", serif;
     transition: all 0.4s;
-
 }
 
+/* Label container */
 input[type="email"][required] + label[placeholder] {
     display: block;
+    position: relative; /* Positioning relative to the input field */
     pointer-events: none;
-    line-height: 2em;
-    margin-top: calc(-3em - 2px);
-    margin-bottom: calc((3em - 1em) + 2px);
     text-align: left;
     font-family: "Inter Tight", serif;
+    margin-top: -2em; /* Adjust this for alignment */
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
+/* Placeholder text styling */
 input[type="email"][required] + label[placeholder]:before {
     content: attr(placeholder);
     display: inline-block;
-    margin: 0 calc(0.7em + 2px);
-    padding: 0 4px;  /* Adjust the horizontal padding */
+    padding: 0 4px;
     line-height: 1.1rem;
     color: #898989;
     white-space: nowrap;
     transition: 0.3s ease-in-out;
-    background-repeat: no-repeat;
-    background-position: center;
     font-family: "Inter Tight", serif;
 }
