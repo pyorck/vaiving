@@ -197,12 +197,13 @@
                     data: formData,
                     dataType: 'json',
                     success: function(response) {
-                        $('#form-response').html('<p>Thanks :) You will get news from us very soon.<br>You can check our social media in the meantime! ;)</p>')
+                        $('#form-response').html('<p>Thanks! You will get news from us very soon.<br>You can check our social media in the meantime! ;)</p>')
                                               .css('visibility', 'visible'); // Show response message
                         $('#subscribe-form')[0].reset(); // Clear the form fields
                         
                         // Replace the email input field with the response message
                         $('#subscribe-form input[name="email"]').replaceWith($('#form-response'));
+                        $('#subscribe-form .button-container').replaceWith($('#form-response'));
                     }
                 });
             });

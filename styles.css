@@ -170,12 +170,13 @@ visibility: hidden; /* Hide by default */
 bottom: calc(-0.5vh + 1vh); /* Adjust based on page layout */
 background-color: rgba(255, 255, 255, 0.8); /* Ensure proper background color */
 border-radius: 5px;
-padding: 0.4rem;
-height: 20px; /* Allow height to adjust based on content */
-max-height: 150px; /* Optional: limit max height to keep it trimmed */
+padding: 0.1rem;
+line-height: 0.9rem;
+height: 3rem; /* Allow height to adjust based on content */
+max-height: 5rem; /* Optional: limit max height to keep it trimmed */
 overflow: hidden; /* Prevent overflow if text is too large */
 scale: 0.95; /* Keep your existing scale */
-max-width: 200rem;
+width: 15rem;
 }
 
 
