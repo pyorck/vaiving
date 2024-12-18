@@ -8,11 +8,12 @@ input[type="email"] {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1.5em;
-    background: #ff3030;
+    background: #ffffff;
     resize: none;
     outline: none;
     font-family: "Inter Tight", serif;
     transition: all 0.4s;
+    font-size: 13px;
 }
 
 /* Input focus styling */
@@ -26,7 +27,7 @@ input[type="email"][required]:focus {
 input[type="email"][required]:focus + label[placeholder]:before,
 input[type="email"][required]:valid + label[placeholder]:before {
     color: #000000;
-    transform: translate(0, -1.6em) scale(1.0);
+    transform: translate(0, -1.45em) scale(1.0);
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-weight: bold;
@@ -41,7 +42,7 @@ input[type="email"][required] + label[placeholder] {
     pointer-events: none;
     text-align: left;
     font-family: "Inter Tight", serif;
-    margin-top: -2em; /* Adjust this for alignment */
+    margin-top: -1.9em; /* Adjust this for alignment */
     margin-bottom: 1em;
     margin-left: 1em;
 }
