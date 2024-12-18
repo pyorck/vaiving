@@ -29,6 +29,7 @@
     position: relative;
     z-index: 9999;
     margin: 0 auto;
+    color: black;
 
 }
 .button-container button {
@@ -39,6 +40,7 @@
     font-weight: bold;
     max-width: 10rem;
     animation: breatheAnimation 3s infinite;
+    color: black;
   }
 
 .button-container button:after {
