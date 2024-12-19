@@ -199,7 +199,6 @@ max-width: 40rem;
 .social-link {
     display: inline-block;
     color: white;
-    border-radius: 0.75rem;         /* Slightly rounded corners */
     text-align: center;             /* Center the content */
     line-height: 5rem;              /* Vertically center text/icon inside */
     transition: transform 0.4s ease, background-color 0.4s ease;
@@ -208,9 +207,9 @@ max-width: 40rem;
     width: 5rem;
     border-radius: 15rem;
     animation: bounce 1.5s infinite;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
-                0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
-    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1), 
+                0 1px 3px rgba(0, 0, 0, 1); /* Subtle shadow with two layers */
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .social-link2 {
@@ -224,9 +223,9 @@ max-width: 40rem;
     border-radius: 15rem;
     animation: bounce 1.5s infinite;
     scale: 1.0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
-    0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
-    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1), 
+    0 1px 3px rgba(0, 0, 0, 1); /* Subtle shadow with two layers */
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe {
