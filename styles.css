@@ -170,13 +170,13 @@ visibility: hidden; /* Hide by default */
 bottom: calc(-0.5vh + 1vh); /* Adjust based on page layout */
 background-color: rgba(255, 255, 255, 0.8); /* Ensure proper background color */
 border-radius: 5px;
-padding: 0.1rem;
-line-height: 0.9rem;
+padding: 0.2rem;
 height: 3rem; /* Allow height to adjust based on content */
 max-height: 5rem; /* Optional: limit max height to keep it trimmed */
 overflow: hidden; /* Prevent overflow if text is too large */
 scale: 0.95; /* Keep your existing scale */
-width: 15rem;
+width: calc(25rem + 35vw);
+max-width: 40rem;
 }
 
 
@@ -184,6 +184,72 @@ width: 15rem;
 .show-response #form-response {
     visibility: visible;
 }
+
+.show-response #social-links {
+    visibility: visible;
+}
+
+#social-links {
+    pointer-events: auto;  /* Ensure the image is clickable */
+    z-index: 9999;
+    padding: 0.5rem;
+}
+
+/* Button styles (center aligned) */
+.social-link {
+    display: inline-block;
+    color: white;
+    border-radius: 0.75rem;         /* Slightly rounded corners */
+    text-align: center;             /* Center the content */
+    line-height: 5rem;              /* Vertically center text/icon inside */
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    width: 5rem;
+    border-radius: 15rem;
+    animation: coloret1 7s infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
+                0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.social-link2 {
+    display: inline-block;
+    color: white;
+    text-align: center;             /* Center the content */
+    line-height: 3rem;              /* Vertically center text/icon inside */
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    line-height: 5rem;              /* Vertically center text/icon inside */
+    width: 5rem;
+    border-radius: 15rem;
+    animation: coloret2 6s infinite;
+    scale: 1.0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
+    0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+
+@keyframes coloret2 {
+    0% {
+        transform: rotate(0deg) scale(1.0);  /* Start with no rotation */
+    }
+
+    100% {
+        transform: rotate(-360deg) scale(1.0);  /* Keep rotating left */
+    }
+}
+
+@keyframes coloret1 {
+    0% {
+        transform: rotate(0deg) scale(1.0);  /* Start with no rotation */
+    }
+
+    100% {
+        transform: rotate(-360deg) scale(1.0);  /* Keep rotating left */
+    }
+}
+
 
 
 .subscribe {

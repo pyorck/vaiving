@@ -59,6 +59,7 @@
                             
                             </form>
                             <div id="form-response"></div>
+                            <div id="social-links"></div>
 
                         <!-- Clouds -->
                         <div class="clouds-wrapper">
@@ -187,29 +188,44 @@
         $(document).ready(function() {
             $('#subscribe-form').on('submit', function(event) {
                 event.preventDefault(); // Prevent the default form submission
-    
+        
                 // Serialize form data
                 var formData = $(this).serialize();
-                
+        
                 $.ajax({
                     url: 'https://formspree.io/f/mpwabnjq', // Replace with your Formspree form endpoint
                     method: 'POST',
                     data: formData,
                     dataType: 'json',
                     success: function(response) {
-                        $('#form-response').html('<p>Thanks! You will get news from us very soon.<br>You can check our social media in the meantime! ;)</p>')
-                                              .css('visibility', 'visible'); // Show response message
+                        // Response message for successful form submission
+                        var responseMessage = '<p>Thanks! You will get news from us very soon.<br>You can check our social media in the meantime! ;)</p>';
+        
+                        // Inject the response message into the form
+                        $('#form-response').html(responseMessage)
+                                                .css('visibility', 'visible'); // Show response message
                         $('#subscribe-form')[0].reset(); // Clear the form fields
-                        
+        
                         // Replace the email input field with the response message
                         $('#subscribe-form input[name="email"]').replaceWith($('#form-response'));
                         $('#subscribe-form .button-container').replaceWith($('#form-response'));
+        
+                        // Social media links injected below the response message
+                        $('#social-links').html(`
+                            <a href="https://www.linkedin.com/company/vaiving" target="_blank" class="social-link">
+                                <img src="pics/linkedin.png" alt="LinkedIn Icon" style="width: 50px; height: 50px; vertical-align: middle;">
+                            </a> 
+                            <a href="https://www.instagram.com/vaivingg" target="_blank" class="social-link2">
+                                <img src="pics/instagram.png" alt="Instagram Icon" style="width: 50px; height: 50px; vertical-align: middle">
+                            </a>
+                        `);
+    
+                        // Debugging - Check the links are correctly added
+                        console.log($('#social-links').html());  // This should log the HTML content of social links
                     }
                 });
             });
         });
-    </script>
-    
-    
+    </script>    
 
 </html>
