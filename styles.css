@@ -207,7 +207,7 @@ max-width: 40rem;
     margin-top: 1rem;
     width: 5rem;
     border-radius: 15rem;
-    animation: coloret1 7s infinite;
+    animation: bounce 1.5s infinite;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
                 0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
     background-color: rgb(255, 255, 255, 0.3);
@@ -222,35 +222,12 @@ max-width: 40rem;
     line-height: 5rem;              /* Vertically center text/icon inside */
     width: 5rem;
     border-radius: 15rem;
-    animation: coloret2 6s infinite;
+    animation: bounce 1.5s infinite;
     scale: 1.0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 
     0 1px 3px rgba(0, 0, 0, 0.9); /* Subtle shadow with two layers */
     background-color: rgb(255, 255, 255, 0.3);
 }
-
-
-@keyframes coloret2 {
-    0% {
-        transform: rotate(0deg) scale(1.0);  /* Start with no rotation */
-    }
-
-    100% {
-        transform: rotate(-360deg) scale(1.0);  /* Keep rotating left */
-    }
-}
-
-@keyframes coloret1 {
-    0% {
-        transform: rotate(0deg) scale(1.0);  /* Start with no rotation */
-    }
-
-    100% {
-        transform: rotate(-360deg) scale(1.0);  /* Keep rotating left */
-    }
-}
-
-
 
 .subscribe {
     background-color: rgb(255, 255, 255, 0.90);
