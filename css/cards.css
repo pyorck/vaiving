@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.4);
-    margin-top: calc(1.5vh + 2.5vh); /* Adjust based on page layout */
+    margin-top: calc(6vh + 2.5vh); /* Adjust based on page layout */
     margin-bottom: 4rem;
 }
 

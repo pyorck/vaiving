@@ -9,24 +9,24 @@ textarea {
 /* Input field styling */
 input[type="email"] {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 400px; /* Limit maximum width for better responsiveness */
+    width: 250px;
+    max-width: 250px; /* Limit maximum width for better responsiveness */
     height: calc(3em + 2px);
     margin: 0;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 0.5px solid #ccc;
     border-radius: 1.5em;
     background: #ffffff;
     resize: none;
     outline: none;
     font-family: "Inter Tight", serif;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
 /* Input focus styling */
 input[type="email"][required]:focus {
     border-color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     transition: all 0.4s;
 }
 
@@ -38,7 +38,7 @@ input[type="email"][required]:valid + label[placeholder]:before {
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-weight: bold;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     transition: all 0.4s;
 }
 

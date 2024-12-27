@@ -232,7 +232,7 @@ max-width: 40rem;
     background-color: rgb(255, 255, 255, 0.90);
     font-weight: 700;
     padding: 0.2rem;
-    font-size: calc(0.9rem + 1.1vw);
+    font-size: calc(0.85rem + 1.1vw);
     margin-top: 0.3rem;
     text-align: center;
     width: 100%;
@@ -243,11 +243,11 @@ max-width: 40rem;
     background-color: rgba(255, 255, 255, 0.90);
     font-weight: 700;
     padding: 0.2rem;
-    font-size: calc(0.9rem + 1.1vw);
+    font-size: calc(0.85rem + 1.1vw);
     margin-top: 0.4rem;
     text-align: center;
     width: 100%;
-    margin-bottom: -3.0rem;
+    margin-bottom: -4rem;
     max-width: 30rem;
 }
 
@@ -291,7 +291,7 @@ a:visited {
     top: 0;                      /* Stick to the top of the page */
     width: 100%;                 
     z-index: 1000;               /* Higher z-index to keep it on top */
-    height: clamp(3rem, 8vh, 6rem); /* Adjust height responsively */
+    height: clamp(3.5rem, 8.5vh, 7rem); /* Adjust height responsively */
     white-space: nowrap;          /* Prevent wrapping */
     box-sizing: border-box;       /* Include padding in width calculation */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Subtle bottom shadow */
@@ -340,9 +340,9 @@ a:visited {
 }
 
 .marketinghead {
-    margin-top: 11vh;
+    margin-top: 12vh;
     position: inline-block;
-    margin-bottom: -23vh;
+    margin-bottom: -22vh;
 }
 
 .marketinghead p {
