@@ -298,25 +298,21 @@ a:visited {
 }
 
 .section-left p {
-    margin: 0;
     display: inline-flex;
     font-size: clamp(1.9rem, 5vw, 2.8rem); /* Smaller font size for mobile, larger for desktop */
     font-family: "Just Another Hand", serif;
     font-weight: 400;
     line-height: 1;              /* Ensure consistent vertical alignment */
-    vertical-align: middle;      /* Align text in the middle with logo */
-    margin-left: 1rem;
-    margin-right: -0.2rem;
+    margin-left: 0.4rem;
 }
 
 .logo {
     display: inline-flex;        /* Keep the logo inline with the text */
-    align-items: center;         /* Center the logo vertically */
     
 }
 
 .logo img {
-    height: clamp(30px, 5vh, 80px); /* Smaller logo size for mobile, larger for desktop */
+    height: clamp(45px, 6vh, 85px); /* Smaller logo size for mobile, larger for desktop */
     vertical-align: middle;      /* Align logo vertically with text */
 }
 
