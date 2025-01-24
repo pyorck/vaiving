@@ -232,23 +232,23 @@ max-width: 40rem;
     background-color: rgb(255, 255, 255, 0.90);
     font-weight: 700;
     padding: 0.2rem;
-    font-size: calc(0.85rem + 1.1vw);
+    font-size: calc(0.85rem + 0.7vw);
     margin-top: 0.3rem;
     text-align: center;
     width: 100%;
-    max-width: 45rem;
+    max-width: 30rem;
 }
 
 .subscribe2 {
     background-color: rgba(255, 255, 255, 0.90);
     font-weight: 700;
     padding: 0.2rem;
-    font-size: calc(0.85rem + 1.1vw);
+    font-size: calc(0.85rem + 0.7vw);
     margin-top: 0.4rem;
     text-align: center;
     width: 100%;
     margin-bottom: -4rem;
-    max-width: 45rem;
+    max-width: 30rem;
 }
 
 
